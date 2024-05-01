@@ -1,0 +1,41 @@
+body {
+    background-image: url('52e52529e59d9efd8a38fc58ff01b2de.jpg');
+    background-size: cover; /* 可以根据需求设置背景图片的大小 */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+    /* 其他背景相关属性 */
+}
+
+
+.bg{
+    position: fixed; /* 将文字固定在浏览器窗口 */
+    bottom: 0; /* 与浏览器窗口的底部对齐 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-75%); /* 水平居中 */
+}
+.shine{
+    width: 1000px;
+
+    font-size: calc(5.4vw); /* 使用vw单位，字体大小随浏览器宽度变化 */
+    max-font-size: 100px; /* 设置最大字体大小为100px */
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgb(238, 242, 244), rgb(41, 128, 235)) 0 0 no-repeat;/*设置线性渐变*/
+    -webkit-background-size: 160px;                        /*设置背景大小*/
+    -webkit-background-clip: text;                            /*背景被裁剪到文字*/
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.3);        /*设置文字的填充颜色*/
+    -webkit-animation: shine 3s infinite;                    /*设置动画*/
+   
+}
+@keyframes shine{   /*创建动画*/
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+
+
+

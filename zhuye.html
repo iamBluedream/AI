@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <link href="zhuye.css" rel="stylesheet"  type="text/css"/>
+   
+    <head>
+        <meta charset="utf-8">
+        <title>授🐟AI官方</title>
+    </head>
+    <body > 
+        <div class="logo-container">
+            <p class="logo">授鱼AI</p>  
+            <p class="slogan">大数据虚拟助教研发的先行者</p>
+        </div>
+      
+        <div class="search-box">
+            <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+            <button class="search-btn" type='button' id='btn' value='&#xf002' > 授</button>
+        </div>
+    <br/>
+        <div class="container">
+            <div class="grid">
+              <div class="box">
+                <a href="1.html" class="link"><span>公司官网  </span> </a>
+              </div>
+              <div class="box">
+                <a href="1.html" class="link"><span>公司服务</span></a>
+              </div>
+            </div>      
+            <div class="grid">
+              <div class="box">
+                <a href="text.html" class="link"><span>开始体验</span></a>
+              </div>
+              <div class="box">
+                <a href="text.html" class="link"><span>客户项目</span></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        
+    </body>
+    <script>
+	    var oInp = document.getElementById('inp');
+	    var oBtn = document.getElementById('btn');
+	
+	    oBtn.onclick = function () {
+	        Search();
+	    }
+	
+	    document.onkeydown = function () {
+	        if (event.keyCode == 13) {
+	            Search();
+	        }
+	    }
+	
+	    function Search() {
+	        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+	        window.open(url);
+	    }
+	</script
+</html>
